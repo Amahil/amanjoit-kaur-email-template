@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html>
-      <head>
-    
+    <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="emailStyle.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Email</title>
-      </head>
-
-
+    </head>
     <body>
         <div class="container-fluid">
-             <div class="row">
-
-                 <div class="col-md-2 side">
-                 <h5 id="Greating-Name">Welcome, Amani!</h5>
-                 <button type="button" class="btn-secondary">Compose</button> 
-                 <ul>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">Starred</a></li>
-                    <li><a href="#">Snoozed</a></li>
-                    <li><a href="#">Sent Mail</a></li>
-                    <li><a href="#">Drafts</a></li>
-                    <li><a href="#">Trash</a></li>
-                    <li><a href="#">Important</a></li>
-                    <li><a href="#">Meet</a></li>
-                    <li><a href="#">New Meeting</a></li>
-                    <li><a href="#">Join a Meeting</a></li>
-                 </ul>
-                 </div>
-
-    <div class="col-md-4 menu">
-      <nav class="navbar navbar-light">
-        <form class="form-inline">
-          <input type="Search" placeholder="Search for emails">
-          <button class="btn btn-outside-secondary my-2 my-sm-0" type="submit">
-        </form>
-      </nav>
-        <a href="#"><h3>New Message</h3>
-        <p>This is a new message</p></a>
-
-        <a href="#"><h3>Old Message</h3>
-        <p>This is an old message</p></a>
-    </div>
-   
-    <div class="col-md-6 message">
-      <h6>From: Experian</h6>
-      <h2>Confirmation: You've locked your Experian credit file, Amani</h2>
-      <p>Yov've locked your Experian credit file Inquiries into your Experian credit info will be blocked until you 
-                            unlock it again.
-      </p>
-      <form>
-        <div class="Form-group">
-          <label for="exampleFormControlTextarea1">Reply</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+            <div class="row" id="pageContent" >
+                <div class="col-md-2 side">
+                    <h5 id="Greating-Name">Welcome, Amani!</h5>
+                    <button type="button" class="btn-secondary">Compose</button> 
+                    <ul>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Starred</a></li>
+                        <li><a href="#">Snoozed</a></li>
+                        <li><a href="#">Sent Mail</a></li>
+                        <li><a href="#">Drafts</a></li>
+                        <li><a href="#">Trash</a></li>
+                        <li><a href="#">Important</a></li>
+                        <li><a href="#">Meet</a></li>
+                        <li><a href="#">New Meeting</a></li>
+                        <li><a href="#">Join a Meeting</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 menu">
+                    <nav class="navbar navbar-light">
+                        <form class="form-inline">
+                            <input type="Search" placeholder="Search for emails">
+                            <button class="btn btn-outside-secondary my-2 my-sm-0" type="submit">
+                        </form>
+                    </nav>
+                    <a href="#"><h3>LinkedIn</h3>
+                    <p>You have a new connection request.</p></a>
+                    <a href="#"><h3>Michael Scott Daily Quotes</h3>
+                    <p>I'm optimistic because everyday I get a little more desp...</p></a>
+                    <a href="#"><h3>LaMar Software</h3>
+                    <p>Learn how you can give us money by calling (209) 322 7...</p></a>
+                </div>
+                <div class="col-md-6 message">
+                  <h6>From: Experian</h6>
+                  <h2>Confirmation: You've locked your Experian credit file, Amani</h2>
+                  <p>Yov've locked your Experian credit file Inquiries into your Experian credit info will be blocked until you 
+                  unlock it again.
+                  </p>
+                  <div style="background-color: white; border-radius: 4px; border-color: black; border-width: 2px;">
+                    <form>
+                      <div class="Form-group" id="replyBox">
+                        <div class="row p-3">
+                          <div class="col-12">
+                            <!-- <label for="replyContent">Reply</label> -->
+                            <textarea class="form-control" id="replyContent"></textarea>
+                          </div>
+                        </div>
+                        <div class="row p-3">
+                          <div class="col-12">
+                            <div class="d-flex justify-content-between">
+                              <button type="button" class="btn btn-default btn-lg" action="attach" id="btn_attach">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                                  <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                                </svg>
+                              </button> 
+                              <button type="button" class="btn btn-outline-secondary" action="submit" id="btn_reply">Reply</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
         </div>
-      </form>
-      <button type="button" class="btn btn-outline-secondary">Send Reply</button>
-    </div>
+    </body>
+</html>
